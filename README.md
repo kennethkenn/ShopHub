@@ -1,4 +1,27 @@
-# E-Commerce Platform - Setup & Testing Guide
+# E-Commerce Platform - Modern & Premium Shopping Experience
+
+A full-stack, state-of-the-art e-commerce platform built with Spring Boot and React, featuring a high-contrast premium design system, real-time analytics, and integrated review management.
+
+## 📸 Screenshots
+
+````carousel
+![Home Page - Hero Section](file:///d:/Projects/Ecommerce/screenshots/home.png)
+<!-- slide -->
+![Product Catalog](file:///d:/Projects/Ecommerce/screenshots/products.png)
+<!-- slide -->
+![Product Details - Gallery View](file:///d:/Projects/Ecommerce/screenshots/product_details.png)
+<!-- slide -->
+![Admin Dashboard - Real-time Stats](file:///d:/Projects/Ecommerce/screenshots/orders.png)
+````
+
+## ✨ Core Features
+
+- 💎 **Premium UI**: Modern, glassmorphic design system with a curated high-contrast palette.
+- 📊 **Real-time Admin Dashboard**: Advanced statistics, sales trends, and inventory tracking.
+- 🛡️ **Review Management**: Moderated customer review system with verified purchase tracking.
+- 🖼️ **Dynamic Gallery**: Responsive, side-by-side product image gallery with smooth transitions.
+- 🔗 **Multilingual Payments**: Integrated support for Stripe and M-Pesa.
+- 🚀 **Performance Optimized**: Lazy loading, unified API calls, and efficient state management.
 
 ## Quick Start
 
