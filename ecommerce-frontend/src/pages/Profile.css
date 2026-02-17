@@ -1,0 +1,99 @@
+.profile-page {
+    min-height: calc(100vh - 80px);
+    padding: 3rem 0 3.5rem;
+    background: linear-gradient(135deg, var(--background) 0%, var(--surface) 100%);
+}
+
+.profile-page h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text);
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.profile-page h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 2px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+}
+
+.profile-card {
+    padding: 2rem;
+    background: var(--surface-strong);
+    border: 2px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.25s ease;
+}
+
+.profile-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+.profile-card h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.profile-card .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1.25rem;
+}
+
+.profile-card label {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.profile-card input {
+    border: 2px solid var(--border);
+    border-radius: 0.65rem;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    background: var(--surface-strong);
+    transition: all 0.25s ease;
+    color: var(--text);
+}
+
+.profile-card input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.1);
+}
+
+.profile-card input:disabled {
+    background: rgba(29, 78, 216, 0.04);
+    color: var(--text-light);
+    border-color: var(--border);
+    cursor: not-allowed;
+}
+
+.profile-card .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .profile-card .form-row {
+        grid-template-columns: 1fr;
+    }
+}

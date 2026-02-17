@@ -1,0 +1,213 @@
+.products-page {
+    padding: 3rem 0 3.5rem;
+    background: linear-gradient(135deg, var(--background) 0%, var(--surface) 100%);
+}
+
+.products-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.products-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    color: var(--text);
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.products-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 2px;
+}
+
+.products-header p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.products-toolbar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px solid var(--border);
+    border-radius: 0.9rem;
+    background: var(--surface-strong);
+    flex-wrap: wrap;
+}
+
+.products-toolbar select {
+    border: 2px solid var(--border);
+    border-radius: 0.65rem;
+    padding: 0.7rem 0.9rem;
+    background: var(--surface-strong);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.products-toolbar select:hover {
+    border-color: var(--primary);
+}
+
+.products-toolbar select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.product-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid var(--border);
+    background: var(--surface-strong);
+    border-radius: 1rem;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.product-image {
+    display: block;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--surface) 0%, var(--background) 100%);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.08);
+}
+
+.product-info {
+    padding: 1.25rem;
+}
+
+.product-info a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-info h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.2s ease;
+    font-weight: 600;
+}
+
+.product-info a:hover h3 {
+    color: var(--primary);
+}
+
+.product-price {
+    font-size: 1.05rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.product-stock {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.btn-add-cart {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1rem;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    border: none;
+    border-radius: 0.65rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-add-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.page-info {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4.5rem 2rem;
+    background: var(--surface-strong);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+.empty-state h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.empty-state p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .products-header {
+        align-items: flex-start;
+    }
+
+    .products-toolbar {
+        justify-content: stretch;
+        flex-direction: column;
+        padding: 0.85rem;
+    }
+}
