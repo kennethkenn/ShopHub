@@ -2,17 +2,18 @@
 
 A full-stack, state-of-the-art e-commerce platform built with Spring Boot and React, featuring a high-contrast premium design system, real-time analytics, and integrated review management.
 
-## 📸 Screenshots
+## Home Page - Hero Section
+![Home Page - Hero Section](screenshots/home.png)
 
-````carousel
-![Home Page - Hero Section](file:///d:/Projects/Ecommerce/screenshots/home.png)
-<!-- slide -->
-![Product Catalog](file:///d:/Projects/Ecommerce/screenshots/products.png)
-<!-- slide -->
-![Product Details - Gallery View](file:///d:/Projects/Ecommerce/screenshots/product_details.png)
-<!-- slide -->
-![Admin Dashboard - Real-time Stats](file:///d:/Projects/Ecommerce/screenshots/orders.png)
-````
+## Product Catalog
+![Product Catalog](screenshots/products.png)
+
+## Product Details - Gallery View
+![Product Details](screenshots/product_details.png)
+
+## Admin Dashboard - Real-time Stats
+![Admin Dashboard](screenshots/orders.png)
+
 
 ## ✨ Core Features
 
