@@ -11,8 +11,8 @@ A full-stack, state-of-the-art e-commerce platform built with Spring Boot and Re
 ## Product Details - Gallery View
 ![Product Details](screenshots/product_details.png)
 
-## Admin Dashboard - Real-time Stats
-![Admin Dashboard](screenshots/orders.png)
+## Orders List
+![Order List](screenshots/orders.png)
 
 
 ## ✨ Core Features
